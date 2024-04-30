@@ -770,6 +770,7 @@ function AutoBuso()
     while true do
         if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buso")
+            wait(1.5) 
         end
     end
 end
