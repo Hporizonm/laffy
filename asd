@@ -780,4 +780,3 @@ while CheckQuestTitle() == false do
 end
 
 QuestGiverTween()
-AutoBuso()
