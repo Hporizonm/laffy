@@ -9,11 +9,11 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
     game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
 end
 
-function GetDistance(point1, point2)
+local function GetDistance(point1, point2)
     return (point1 - point2).magnitude
 end
 
-function BringBandit()
+local function BringBandit()
     local playerPosition = player.Character.HumanoidRootPart.Position
     for _, bandit in ipairs(bandits) do
         if bandit:IsA("Model") and bandit.Name == "Bandit" and bandit.PrimaryPart then
